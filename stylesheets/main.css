@@ -245,6 +245,7 @@ main .heading {
   text-align: center;
   position: relative;
   margin-top: 100vh;
+  margin-bottom: -100vh;
 	text-transform: uppercase;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
