@@ -3,15 +3,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-}
-
 :root {
 	font-size: 14px;
+}
+
+html {
+	height: 500vh;
 }
 
 body {
@@ -23,7 +20,7 @@ body {
 	--color-content-link-hover: #000;
 	--color-heading: #d1cfcf;
 	color: var(--color-text);
-	background-color: var(--color-bg);
+	background-color: black;
 	font-family: "Futura PT Demi", sans-serif;
 }
 
@@ -35,7 +32,6 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
 	background: var(--color-bg);
 }
 
@@ -163,6 +159,7 @@ a:focus {
 .content {
 	font-family: var(--font-content), serif;
 	color: var(--color-content-text);
+  background-color: #faf6f1;
 }
 
 .menu {
@@ -172,6 +169,7 @@ a:focus {
 	justify-content: space-between;
 	text-align: center;
 	font-size: 10vh;
+	/* margin-top: 100vh; */
 }
 
 .quote {
@@ -204,13 +202,13 @@ a:focus {
 	white-space: nowrap;
 	padding-bottom: 2vw;
 	-webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #272222;
 	color: transparent;
 }
 
 .menu__link:hover,
 .quote__link:hover {
-	color: black;
+	color: #272222;
 	transition: 0.5s;
 }
 
@@ -242,24 +240,31 @@ a:focus {
 }
 
 main .heading {
+  height: 100vh;
   font-size: 5rem;
   text-align: center;
   position: relative;
-  top: 50vh;
+  margin-top: 100vh;
+	text-transform: uppercase;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-main .heading span {
+.random {
+  padding-bottom: 50vh;
+}
+
+.random span {
   width: 3.6vw;
   padding-right: 0.5vw;
   display: inline-block;
+  color: white;
 }
 
 @media screen and (min-width: 53em) {
 	body {
-		overflow: hidden;
+		/* overflow-x: hidden; */
 	}
 	.message {
 		display: none;
