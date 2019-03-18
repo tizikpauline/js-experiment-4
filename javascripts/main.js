@@ -137,3 +137,10 @@
 
     new Menu();
 }
+
+// $(".menu__link_1").mouseenter (function() {
+//     $(".menu__link_1 span").css({
+//       "color": "black",
+//       "transition": "0.4s"
+//     })
+//   })

@@ -7,34 +7,10 @@
 		<meta name="keywords" content="distortion, svg filter, hover, image, effect, web, javascript" />
 		<link href="https://fonts.googleapis.com/css?family=Cardo|Nunito+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="stylesheets/layout.css"/>
+    <script src="javascripts/jquery.js" charset="utf-8"></script>
   </head>
   <body class="demo-1">
     <main>
-      <div class="frame">
-        <div class="frame__title-wrap">
-          <h1 class="frame__title">Image Distortion Effects with SVG Filters</h1>
-          <div class="frame__links">
-            <a href="https://tympanus.net/Development/TextTrailEffect/">Previous Demo</a>
-            <a href="https://tympanus.net/codrops/?p=38971">Article</a>
-            <a href="https://github.com/codrops/SVGImageHover/">GitHub</a>
-          </div>
-        </div>
-        <div class="frame__credits">
-          <h4 class="frame__heading">Designer</h4>
-          <span class="frame__text">Ayita Winter</span>
-          <h4 class="frame__heading">Art Direction</h4>
-          <span class="frame__text">Karl S. Greenberg</span>
-          <h4 class="frame__heading">Developer</h4>
-          <span class="frame__text">Francine O'Connor</span>
-        </div>
-        <div class="frame__contact">
-          <h4 class="frame__heading">Contact</h4>
-          <span class="frame__text">info@belaculada.com</span>
-          <span class="frame__text">+66808099456</span>
-        </div>
-        <div class="frame__photography">Photography by Joaquin Camillo</div>
-        </div>
-      </div>
       <div class="content">
         <svg class="distort" width="350" height="450" viewBox="0 0 350 450">
           <filter id="distortionFilter">
@@ -42,10 +18,10 @@
             <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" x="0%" y="0%" width="100%" height="100%" filterUnits="userSpaceOnUse"/>
           </filter>
           <g filter="url(#distortionFilter)">
-            <image class="distort__img" x="50" y="50" xlink:href="images/dido.svg" height="350" width="250"/>
-            <image class="distort__img" x="50" y="50" xlink:href="images/idomeneus.png" height="350" width="250"/>
-            <image class="distort__img" x="50" y="50" xlink:href="images/ariadna.png" height="350" width="250"/>
-            <image class="distort__img" x="50" y="50" xlink:href="images/orpheus.png" height="350" width="250"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/dido.svg" height="80%" width="100%"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/idomeneus.png" height="80%" width="100%"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/ariadna.png" height="80%" width="100%"/>
+            <image class="distort__img" x="50" y="50" xlink:href="images/orpheus.png" height="80%" width="100%"/>
           </g>
         </svg>
         <nav class="menu">
