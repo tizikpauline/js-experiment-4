@@ -172,7 +172,6 @@ a:focus {
 	justify-content: space-between;
 	text-align: center;
 	font-size: 10vh;
-	font-weight: normal;
 }
 
 .quote {
@@ -234,6 +233,13 @@ a:focus {
 }
 
 /*  */
+
+.images-downloader {
+  margin-left: 500vw;
+  overflow: hidden;
+  position: absolute;
+  display: none;
+}
 
 main .heading {
   font-size: 5rem;
