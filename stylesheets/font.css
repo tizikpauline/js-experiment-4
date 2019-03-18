@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "FuturaMediumC";
+	src: url("../fonts/Futura/FuturaMediumC/FuturaMediumC.eot");
+	src: url("../fonts/Futura/FuturaMediumC/FuturaMediumC.woff") format("woff"),
+			 url("../fonts/Futura/FuturaMediumC/FuturaMediumC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaLightC";
+	src: url("../fonts/Futura/FuturaLightC/FuturaLightC.eot");
+	src: url("../fonts/Futura/FuturaLightC/FuturaLightC.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/Futura/FuturaLightC/FuturaLightC.woff") format("woff"),
+			 url("../fonts/Futura/FuturaLightC/FuturaLightC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FuturaBookC";
+	src: url("../fonts/Futura/FuturaBookC/FuturaBookC.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura PT Demi";
+  src: url("../fonts/FuturaPT-Demi.woff2");
+}
+
+@font-face {
+  font-family: "Futura PT Bold";
+  src: url("../fonts/FuturaPT-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Futura PT Light";
+  src: url("../fonts/FuturaPT-Light.woff2");
+}
