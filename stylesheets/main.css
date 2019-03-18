@@ -233,6 +233,23 @@ a:focus {
 	border-color: currentColor;
 }
 
+/*  */
+
+main .heading {
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+main .heading span {
+  width: 3.6vw;
+  padding-right: 0.5vw;
+  display: inline-block;
+}
 
 @media screen and (min-width: 53em) {
 	body {
