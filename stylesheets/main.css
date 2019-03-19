@@ -22,6 +22,7 @@ body {
 	color: var(--color-text);
 	background-color: black;
 	font-family: "Futura PT Demi", sans-serif;
+  font-size: 1vw;
 }
 
 /* Page Loader */
@@ -241,7 +242,6 @@ a:focus {
 
 main .heading {
   height: 100vh;
-  font-size: 5rem;
   text-align: center;
   position: relative;
   margin-top: 100vh;
@@ -258,8 +258,19 @@ main .heading {
 
 .random span {
   width: 3.6vw;
-  padding-right: 0.5vw;
+  font-size: 5rem;
+  padding-right: 2vw;
   display: inline-block;
+  color: white;
+}
+
+footer {
+  height: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 2rem;
   color: white;
 }
 
