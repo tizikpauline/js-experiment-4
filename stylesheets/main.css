@@ -7,10 +7,6 @@
 	font-size: 14px;
 }
 
-html {
-	height: 500vh;
-}
-
 body {
 	--color-text: #272222;
 	--color-bg: #faf6f1;
@@ -233,6 +229,58 @@ a:focus {
 
 /*  */
 
+.animation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.animation-container span {
+  color: whitesmoke;
+  display: block;
+  font-size: 18px;
+  font-family: 'Helvetica';
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  animation-timing-function: ease-out;
+  animation-name: move;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  25% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: none;
+  }
+}
+
+/*  */
+
 .images-downloader {
   margin-left: 500vw;
   overflow: hidden;
@@ -265,18 +313,31 @@ main .heading {
 }
 
 footer {
-  height: 15vw;
+  height: 8vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   font-size: 2rem;
   color: white;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  padding-bottom: 1vw;
+}
+
+.adress a {
+  color: white;
+}
+
+.social-icons img {
+  cursor: pointer;
+  height: 3.5vw;
+  padding-left: 2.5vw;
 }
 
 @media screen and (min-width: 53em) {
 	body {
-		/* overflow-x: hidden; */
+		overflow-x: hidden;
 	}
 	.message {
 		display: none;
@@ -342,4 +403,10 @@ footer {
 	.quote__link::after {
 		top: calc(100% - 1vh);
 	}
+}
+
+@media (min-width: 320px) {
+  .content {
+    width: 100%;
+  }
 }
